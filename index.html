@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMOS</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
         <div class="column-left">
-            <img src="resources/cmos-decent-logo-white.png" alt="cmos logo">
+            <a href="index.html"><img src="resources/cmos-decent-logo-white.png" alt="cmos logo"></a>
         </div>
         
         <div class="column-right">
           <i class="fas fa-bars visible-mobile hamburger-icon" id="hamburgerIcon"></i>
             <div class="nav visible-desktop" id="nav">
-                <div class="nav-item"><a href="">SERVICES</a></div>
-                <div class="nav-item"><a href="">ABOUT</a></div>
-                <div class="nav-item"><a href="">PEOPLE</a></div>
-                <div class="nav-item"><a href="">CAREERS</a></div>
-                <div class="nav-item"><a href="">CONTACT</a></div>
+                <div class="nav-item"><a href="" id="dropdownButton">Services</a><i class="fas fa-chevron-down drop-down-arrow" id="dropdownArrow"></i><div class="drop-down-menu visible-desktop" id="dropdownMenu">
+        <a href="" class="drop-down-menu-item">Commercial Cleaning</a>
+        <a href="" class="drop-down-menu-item">Common Area Cleaning</a>
+    </div></div>
+                <div class="nav-item"><a href="">About</a></div>
+                <div class="nav-item"><a href="">People</a></div>
+                <div class="nav-item"><a href="">Careers</a></div>
+                <div class="nav-item"><a href="">Contact</a></div>
             </div>
             <div class="cta-header visible-desktop"> <a href="">GET FREE QUOTE</a> <i class="fas fa-chevron-right"></i></div>
         </div>
@@ -28,7 +32,13 @@
     
     <div class="mobile-menu visible-mobile" id ="mobileMenu">
         <div class="nav" id="nav">
-                <div class="nav-item"><a href="">SERVICES</a></div>
+                <div class="nav-item">
+                    <span>SERVICES</span>
+                    <div class="mobile-sub-menu">
+                        <a href="" class="mobile-sub-menu-item">Commercial Cleaning</a>
+                        <a href="" class="mobile-sub-menu-item">Common Area Cleaning</a>
+                    </div>
+                </div>
                 <div class="nav-item"><a href="">ABOUT</a></div>
                 <div class="nav-item"><a href="">PEOPLE</a></div>
                 <div class="nav-item"><a href="">CAREERS</a></div>
@@ -38,11 +48,40 @@
     
     <div class="drop-shadow" id="dropshadow"></div>
     
-    <div>Hello I'm here to test your positioning :) If you can see me position absolute is probably not working and if you can't see me then you're probably not reading this anyway.</div>
+    <div class="mobile-cta visible-mobile">
+        <a href=""><span>Get Free Quote</span><i class="fas fa-chevron-right"></i></a>
+    </div>
+    
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <img src="resources/CMOSPrint-33-2.JPG" class="slideshow-img">
+      </div>
+      <div class="swiper-slide">
+          <img src="resources/CMOSPrint-24-2.JPG" class="slideshow-img">
+      </div>
+      <div class="swiper-slide">
+          <img src="resources/CMOSPrint-27-2.JPG" class="slideshow-img">
+      </div>
+      <div class="swiper-slide">
+          <img src="resources/CMOSPrint-44-2.JPG" class="slideshow-img">
+      </div>
+      <div class="swiper-slide">
+          <img src="resources/CMOSPrint-59-2.JPG" class="slideshow-img">
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
     
     <div class="footer">
         
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
