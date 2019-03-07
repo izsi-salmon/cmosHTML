@@ -166,10 +166,6 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
     margin-right: auto;
 }
 
-.swiper-slide {
-    background: #000;
-}
-
 .swiper-pagination-bullet{
     background-color: #FFF;
 }
@@ -239,6 +235,46 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
 /*    width: 90%;*/
 }
 
+.section{
+    padding: 3em 0;
+}
+
+.section-service-menu{
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.page-heading{
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.page-blurb{
+    margin: 0 auto 1.5rem auto;
+    max-width: 400px;
+}
+
+.service-menu-item{
+    display: block;
+    margin-top: 3em;
+}
+
+a.service-menu-item{
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.service-icon{
+    font-size: 3rem;
+    margin-bottom: 0.3em;
+}
+
+
+
 @media only screen and (min-width: 375px){
     .emph-slide-text{
         font-size: 1.1em;
@@ -250,6 +286,14 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
     
     .slide-cta{
         font-size: 0.7em;
+    }
+    
+    .section{
+        padding: 3.7em 0;
+    }
+    
+    .service-menu-item{
+        margin: 3.8em auto 0 auto;
     }
 }
 
@@ -288,12 +332,34 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
         font-size: 2rem;
     }
     
+    .section{
+        padding: 5em 0;
+    }
+    
+    .page-heading{
+        font-size: 2em;
+    }
+    
+    .page-blurb{
+        font-size: 1.1em;
+    }
+    
 }
 
 @media only screen and (min-width: 768px){
     
     .swiper-container{
-        min-height: 25em;
+        min-height: 20em;
+    }
+    
+    .service-menu{
+        display: flex;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    
+    .service-name{
+        font-size: 1.2em;
     }
     
 }

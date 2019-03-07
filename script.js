@@ -41,7 +41,7 @@ dropdownArrow.addEventListener('click', toggleDropdown, false);
 
 // SWIPER (Home page slideshow banner)
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper1', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
