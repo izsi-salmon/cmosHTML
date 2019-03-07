@@ -235,12 +235,18 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
 /*    width: 90%;*/
 }
 
+/* PAGE FEATURES */
+
+
+
 .section{
     padding: 3em 0;
 }
 
+/* SERVICE MENU */
+
 .section-service-menu{
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     text-align: center;
     width: 90%;
 }
@@ -258,7 +264,7 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
 
 .service-menu-item{
     display: block;
-    margin-top: 3em;
+    margin: 3.5em;
 }
 
 a.service-menu-item{
@@ -273,7 +279,111 @@ a.service-menu-item{
     margin-bottom: 0.3em;
 }
 
+/* TESTIMONIALS */
 
+.testimonial-section{
+    background-color: #EBEBEB;
+}
+
+.testimonial-box{
+    width: 100%;
+}
+
+.testimonial-content{
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 3em 0;
+    width: 80%;
+}
+
+.testimonial-box:nth-child(even){
+    background-color: #D6D6D6;
+}
+
+.testimonial-heading{
+    border-bottom: 3px solid #34a73a;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 1.3em;
+    padding-bottom: 0.3em;
+}
+
+.testimonial-parag{
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+.testimonial-sign h5{
+    font-size: 1.1em;
+}
+
+.testimonial-sign p{
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 0.2em;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #919090;
+    color: #FFF;
+    padding: 1em;
+}
+
+.contact-buttons{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    font-weight: 600;
+    margin-bottom: 1.7em;
+}
+
+.phone-button{
+    font-size: 1.1em;
+}
+
+.phone-button i{
+    margin-right: 0.4em;
+}
+
+.contact-button{
+    border: 3px solid #FFF;
+    padding: 0.3em;
+}
+
+.locations-container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.location{
+    margin: 1.5em 0;
+}
+
+.location-title{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.location-address{
+    font-size: 0.9em;
+}
+
+.footer-bar{
+    background-color: #878787;
+    color: #555;
+    display: flex;
+        justify-content: flex-end;
+    padding: 1em;
+}
+
+.footer-bar a {
+    color: inherit;
+    font-size: 1.5em;
+    margin-left: 1.3em;
+}
 
 @media only screen and (min-width: 375px){
     .emph-slide-text{
@@ -344,6 +454,12 @@ a.service-menu-item{
         font-size: 1.1em;
     }
     
+    /* FOOTER */
+    
+    .footer{
+        padding: 3em;
+    }
+    
 }
 
 @media only screen and (min-width: 768px){
@@ -360,6 +476,64 @@ a.service-menu-item{
     
     .service-name{
         font-size: 1.2em;
+    }
+    
+    /* FOOTER */
+    
+    .contact-buttons{
+        font-size: 1.3em;
+    }
+    
+    .locations-container{
+        display: flex;
+            justify-content: space-between;
+    }
+    
+    .location{
+        max-width: 45%;
+    }
+    
+    .location-title{
+        font-size: 1.2em;
+    }
+    
+    .location-address{
+        font-size: 1em;
+    }
+    
+    .footer-bar{
+        padding: 1.5em;
+    }
+    
+    .footer-bar a{
+        font-size: 2.1em;
+    }
+    
+}
+
+@media only screen and (min-width: 870px){
+    
+    .mobile-cta{
+        padding: 1.2em 2em;
+        font-size: 1.1em;
+    }
+    
+    .mobile-cta span{
+        margin-right: 1em;
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    
+    .testimonial-container{
+        display: flex;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+    
+    .testimonial-box:nth-child(even){
+        background-color: transparent;
     }
     
 }
@@ -384,24 +558,6 @@ a.service-menu-item{
 
     .slide-cta{
         font-size: 1.1em;
-    }
-    
-    .page-title{
-        font-size: 2.8rem;
-        padding: 0.6em 0;
-    }
-    
-}
-
-@media only screen and (min-width: 870px){
-    
-    .mobile-cta{
-        padding: 1.2em 2em;
-        font-size: 1.1em;
-    }
-    
-    .mobile-cta span{
-        margin-right: 1em;
     }
     
 }
@@ -451,6 +607,37 @@ a.service-menu-item{
 
     .parag-slide-text p{
         margin-bottom: 0.2em;
+    }
+    
+    .page-title{
+        font-size: 2.8rem;
+        padding: 0.6em 0;
+    }
+    
+    .section{
+        padding: 5em 0;
+    }
+    
+    .page-heading{
+        font-size: 2.5em;
+    }
+    
+    .service-menu{
+        margin: 3em auto;
+    }
+    
+    /* FOOTER */
+    
+    .footer{
+        padding: 5em;
+    }
+    
+    .contact-buttons{
+        font-size: 1.5em;
+    }
+    
+    .locations-container{
+        width: 80%;
     }
     
     .visible-mobile{
