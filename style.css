@@ -237,7 +237,24 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
 
 /* PAGE FEATURES */
 
+.banner-image{
+    background-image: url(resources/CMOSPrint-44-2.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+    width: 100%;
+}
 
+.banner-title{
+    color: #FFF;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1em;
+    position: absolute;
+        bottom: 0;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
 
 .section{
     padding: 3em 0;
@@ -322,6 +339,43 @@ a.service-menu-item{
     color: #555;
     font-size: 0.9em;
     margin-top: 0.2em;
+}
+
+/* SERVICE PAGE */
+
+.section-service-blurb{
+    font-style: italic;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.service-blurb-title{
+    border-bottom: 3px solid #34a73a;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+
+.service-blurb-parag p{
+    margin-bottom: 0.3em;
+}
+
+.sub-services-container{
+    margin: 0 auto 5em auto;
+    width: 80%;
+}
+
+.sub-service{
+    display: flex;
+        align-items: center;
+    margin: 0 0 2em 0;
+}
+
+.sub-service-icon{
+    margin-right: 0.5em;
+    width: 3em;
 }
 
 /* FOOTER */
@@ -460,6 +514,10 @@ a.service-menu-item{
         padding: 3em;
     }
     
+    .banner-image{
+        min-height: 17em;
+    }
+    
 }
 
 @media only screen and (min-width: 768px){
@@ -467,6 +525,14 @@ a.service-menu-item{
     .swiper-container{
         min-height: 20em;
     }
+    
+    /* PAGE FEATURES*/
+    
+    .banner-image{
+        min-height: 20em;
+    }
+    
+    /* ^ PAGE FEATURES*/
     
     .service-menu{
         display: flex;
@@ -476,6 +542,32 @@ a.service-menu-item{
     
     .service-name{
         font-size: 1.2em;
+    }
+    
+    /* SERVICE PAGE */
+    
+    .sub-services-container{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+       width: 70%;
+    }
+    
+    .sub-service{
+        display: block;
+        margin-bottom: 4em;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .sub-service-icon{
+        margin-bottom: 0.5em;
+    }
+    
+    .service-description{
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
     }
     
     /* FOOTER */
@@ -560,6 +652,14 @@ a.service-menu-item{
         font-size: 1.1em;
     }
     
+    /* PAGE FEATURES*/
+    
+    .banner-image{
+        min-height: 30em;
+    }
+    
+    /* ^ PAGE FEATURES*/
+    
 }
 
 @media only screen and (min-width: 1200px){
@@ -624,6 +724,20 @@ a.service-menu-item{
     
     .service-menu{
         margin: 3em auto;
+    }
+    
+    /* SERVICE PAGE */
+    
+    .section-service-blurb{
+        width: 70%;
+    }
+    
+    .service-blurb-parag{
+        width: 70%;
+    }
+    
+    .sub-services-container{
+        width: 65%;
     }
     
     /* FOOTER */
