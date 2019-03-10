@@ -65,7 +65,7 @@
     margin: 1.8em 2em 1.6em 1.5em;
 }
 
-a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item:hover, a.drop-down-menu-item:active{
+a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item:hover, a.drop-down-menu-item:active{
     color: #FFF;
 }
 
@@ -75,8 +75,9 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
     font-size: 1.8em;
 }
 
-.nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+.nav-item a, .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
     color: #FFF;
+    cursor: pointer;
 }
 
 .cta-header{
@@ -248,12 +249,14 @@ a.drop-down-menu-item:link, a.drop-down-menu-item:visited, a.drop-down-menu-item
 
 .banner-title{
     color: #FFF;
-    font-size: 1.5em;
     font-family: 'Roboto Condensed', sans-serif;
-    padding: 1em;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 0.5em;
     position: absolute;
         bottom: 0;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-transform: uppercase;
 }
 
 .section{
@@ -343,12 +346,6 @@ a.service-menu-item{
 
 /* SERVICE PAGE */
 
-.section-service-blurb{
-    font-style: italic;
-    margin: 0 auto;
-    width: 80%;
-}
-
 .service-blurb-title{
     border-bottom: 3px solid #34a73a;
     display: inline-block;
@@ -356,6 +353,12 @@ a.service-menu-item{
     margin-bottom: 0.7em;
     padding: 0.3em;
     text-transform: uppercase;
+}
+
+.section-service-blurb{
+    font-style: italic;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .service-blurb-parag p{
@@ -405,6 +408,11 @@ a.service-menu-item{
 .contact-button{
     border: 3px solid #FFF;
     padding: 0.3em;
+}
+
+a.contact-button{
+    color: inherit;
+    text-decoration: none;
 }
 
 .locations-container{
@@ -459,6 +467,10 @@ a.service-menu-item{
     .service-menu-item{
         margin: 3.8em auto 0 auto;
     }
+    
+    .banner-title{
+        font-size: 1.85em;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -508,14 +520,20 @@ a.service-menu-item{
         font-size: 1.1em;
     }
     
+    /* PAGE FEATURES */
+    
+    .banner-image{
+        min-height: 17em;
+    }
+    
+    .banner-title{
+        font-size: 3em;
+    }
+    
     /* FOOTER */
     
     .footer{
         padding: 3em;
-    }
-    
-    .banner-image{
-        min-height: 17em;
     }
     
 }
@@ -658,6 +676,10 @@ a.service-menu-item{
         min-height: 30em;
     }
     
+    .banner-title{
+        font-size: 4em;
+    }
+    
     /* ^ PAGE FEATURES*/
     
 }
@@ -709,11 +731,6 @@ a.service-menu-item{
         margin-bottom: 0.2em;
     }
     
-    .page-title{
-        font-size: 2.8rem;
-        padding: 0.6em 0;
-    }
-    
     .section{
         padding: 5em 0;
     }
@@ -739,6 +756,9 @@ a.service-menu-item{
     .sub-services-container{
         width: 65%;
     }
+    
+    /* PAGE FEATURES */
+    
     
     /* FOOTER */
     
