@@ -8,6 +8,10 @@
     display: none;
 }
 
+.italic{
+    font-style: italic;
+}
+
 /* MAIN NAVIGATION */
 
 .header{
@@ -252,7 +256,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.6em;
     font-weight: 700;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     position: absolute;
         bottom: 0;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -261,6 +265,30 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
 
 .section{
     padding: 3em 0;
+}
+
+.page-blurb-title{
+    border-bottom: 3px solid #34a73a;
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    padding: 0 0.3em 0.3em 0;
+    text-transform: uppercase;
+}
+
+.page-blurb-parag p{
+    margin-bottom: 0.3em;
+}
+
+a.page-cta{
+    border: 3px solid #000;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* SERVICE MENU */
@@ -346,23 +374,9 @@ a.service-menu-item{
 
 /* SERVICE PAGE */
 
-.service-blurb-title{
-    border-bottom: 3px solid #34a73a;
-    display: inline-block;
-    font-size: 1.2em;
-    margin-bottom: 0.7em;
-    padding: 0.3em;
-    text-transform: uppercase;
-}
-
 .section-service-blurb{
-    font-style: italic;
     margin: 0 auto;
     width: 80%;
-}
-
-.service-blurb-parag p{
-    margin-bottom: 0.3em;
 }
 
 .sub-services-container{
@@ -379,6 +393,107 @@ a.service-menu-item{
 .sub-service-icon{
     margin-right: 0.5em;
     width: 3em;
+}
+
+/* ABOUT */
+
+.about-blurb-container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.about-text{
+    margin-bottom: 2em;
+}
+
+.about-image img{
+    width: 100%;
+}
+
+.section-value{
+    margin: 1em auto 4em auto;
+    width: 90%;
+}
+
+.value-cards-container{
+    margin: 3em auto 0 auto;
+    width: 90%;
+}
+
+.value-card{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.value-card:last-of-type{
+    margin-bottom: 1em;
+}
+
+.value-icon{
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.value-title{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+a.value-cta{
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 1.5em auto;
+    padding: 1.1em 1em;
+    text-align: center;
+}
+
+/* PEOPLE */
+
+.section-people{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.person-card{
+    margin: 2em 0 4.5em 0;
+}
+
+.person-image{
+    margin: 0 auto 1em auto;
+    width: 80%;
+}
+
+.person-image img{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+}
+
+.person-name, .person-role, .person-email{
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.person-role, .person-email{
+    color: #555;
+}
+
+.person-name{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.person-role{
+    font-style: italic;
+}
+
+.person-email{
+    font-size: 0.9em;
+}
+
+.person-bio{
+    margin-top: 1em;
 }
 
 /* FOOTER */
@@ -516,6 +631,12 @@ a.contact-button{
         font-size: 2em;
     }
     
+    .page-blurb-title{
+        font-size: 1.4em;
+        margin-bottom: 1em;
+        padding-bottom: 0.2em;
+    }
+    
     .page-blurb{
         font-size: 1.1em;
     }
@@ -528,6 +649,18 @@ a.contact-button{
     
     .banner-title{
         font-size: 3em;
+    }
+    
+    /* ABOUT */
+    
+    .people-container{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    }
+    
+    .person-card{
+        max-width: 250px;
     }
     
     /* FOOTER */
@@ -682,6 +815,43 @@ a.contact-button{
     
     /* ^ PAGE FEATURES*/
     
+    /* ABOUT */
+    
+    .about-blurb-container{
+        display: flex;
+            justify-content: space-between;
+        margin-top: 3.5em;
+        width: 70%;
+    }
+    
+    .about-text{
+        width: 45%;
+        
+    }
+    
+    .about-image{
+        width: 50%;
+    }
+    
+    .section-value{
+        margin: 3em auto 6em auto;
+        width: 70%;
+    }
+    
+    .value-cards-container{
+        display: flex;
+            justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    
+    .value-card{
+        margin: 3em 0;
+        width: 45%;
+    }
+    
+    /* ^ ABOUT */
+    
 }
 
 @media only screen and (min-width: 1200px){
@@ -699,8 +869,13 @@ a.contact-button{
     }
 
     .nav-item{
-        border-bottom: none;
-        padding: 1em;
+        border-bottom: 3px solid transparent;
+        margin: 1em;
+        padding: 0 0 0.2em 0;
+    }
+    
+    .nav-item-active{
+        border-bottom: 3px solid #FFF;
     }
     
     .page-title{
@@ -717,6 +892,14 @@ a.contact-button{
         transform: translateY(-50%);
         z-index: 999;
     }
+    
+    /* PAGE FEATURES */
+    
+    .blurb-70{
+        width: 70%;
+    }
+    
+    /* ^ PAGE FEATURES */
     
     .slide-content{
         margin-right: 7em;
@@ -749,16 +932,9 @@ a.contact-button{
         width: 70%;
     }
     
-    .service-blurb-parag{
-        width: 70%;
-    }
-    
     .sub-services-container{
         width: 65%;
     }
-    
-    /* PAGE FEATURES */
-    
     
     /* FOOTER */
     
