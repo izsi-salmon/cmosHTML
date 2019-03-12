@@ -14,7 +14,7 @@ function toggleMenu(){
         dropshadow.style.pointerEvents = 'none';
     } else{
         navContent.style.maxHeight = navContent.scrollHeight + 'px';
-        dropshadow.style.opacity = '0.5';
+        dropshadow.style.opacity = '0.4';
         dropshadow.style.pointerEvents = 'auto';
     }
 }

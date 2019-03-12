@@ -456,11 +456,11 @@ a.value-cta{
 }
 
 .person-card{
-    margin: 2em 0 4.5em 0;
+    margin: 2em 0 5em 0;
 }
 
 .person-image{
-    margin: 0 auto 1em auto;
+    margin: 0 auto 2em auto;
     width: 80%;
 }
 
@@ -472,7 +472,7 @@ a.value-cta{
 
 .person-name, .person-role, .person-email{
     margin-bottom: 0.3em;
-    text-align: center;
+/*    text-align: center;*/
 }
 
 .person-role, .person-email{
@@ -494,6 +494,140 @@ a.value-cta{
 
 .person-bio{
     margin-top: 1em;
+}
+
+/* CAREERS */
+
+.section-careers-blurb{
+    margin: auto;
+    width: 90%;
+}
+
+.careers-title{
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+    text-transform: uppercase;
+}
+
+.careers-parag p{
+    margin-bottom: 0.3em;
+}
+
+.section-employee-values{
+    background-color: #D6D6D6;
+}
+
+.employee-values-container{
+    margin: auto;
+    width: 75%;
+}
+
+.employee-value-card{
+    margin-bottom: 3em;
+}
+
+.employee-value-title{
+    border-bottom: 3px solid #34a73a;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.8em;
+}
+
+.employee-value-title{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* CONTACT */
+
+.contact-section{
+    margin: auto;
+    width: 90%;
+}
+
+.contact-collumn{
+    margin-bottom: 3em;
+}
+
+.section-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.phone-flex{
+    font-size: 1.3em;
+    display: flex;
+        align-items: center;
+    margin-bottom: 2em;
+}
+
+.phone-flex i{
+    margin-right: 0.5em;
+}
+
+.contact-location{
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+.contact-location h3{
+    margin-bottom: 0.7em;
+}
+
+.contact-location p{
+    margin-bottom: 0.2em;
+}
+
+.page-cta i{
+    margin-left: 0.5em;
+}
+
+.form-title{
+    color: #666;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+
+.contact-form label{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input{
+    display: block;
+    margin-bottom: 1.7em;
+}
+
+.contact-form input[type=text], .contact-form input[type=email]{
+    box-sizing: border-box;
+    padding: 0.7em;
+    width: 100%;
+}
+
+.contact-form textarea{
+    box-sizing: border-box;
+    height: 150px;
+    margin-bottom: 1.7em;
+    padding: 0.7em;
+    width: 100%;
+}
+
+.form-submit{
+    background-color: #34a73a;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 0.7em 2em;
+    text-transform: uppercase;
+}
+
+.submit-warning{
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    max-width: 500px;
 }
 
 /* FOOTER */
@@ -651,16 +785,54 @@ a.contact-button{
         font-size: 3em;
     }
     
-    /* ABOUT */
+    /* PEOPLE */
+    
+    .section-people{
+        width: 90%;
+    }
     
     .people-container{
         display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
     }
     
     .person-card{
+        margin: 2em 2em 4.5em 2em;
         max-width: 250px;
+    }
+    
+    .person-image{
+        width: 90%;
+    }
+    
+    /* CAREERS */
+    
+    .section-careers-blurb{
+        text-align: center;
+    }
+    
+    .careers-title{
+        font-size: 1.4em;
+        margin-bottom: 1.5em;
+    }
+    
+    .careers-parag{
+        margin-bottom: 2em;
+    }
+    
+    .careers-parag p{
+        margin-bottom: 0.5em;
+    }
+    
+    .employee-value-title{
+        font-size: 1.2em;
+    }
+    
+    /* CONTACT */
+    
+    .contact-section{
+        width: 80%;
     }
     
     /* FOOTER */
@@ -765,6 +937,21 @@ a.contact-button{
         margin-right: 1em;
     }
     
+    /* CAREERS */
+    
+    .employee-values-container{
+        display: flex;
+            justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1000px;
+    }
+    
+    .employee-value-card{
+        box-sizing: border-box;
+        width: 40%;
+        padding: 1em;
+    }
+    
 }
 
 @media only screen and (min-width: 900px){
@@ -850,7 +1037,49 @@ a.contact-button{
         width: 45%;
     }
     
-    /* ^ ABOUT */
+    /* CONTACT */
+    
+    .contact-section{
+        width: 90%;
+    }
+    
+    .section-title{
+        font-size: 3.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .contact-container{
+        display: flex;
+            justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+    
+    .contact-collumn{
+        width: 50%;
+    }
+    
+    .phone-flex{
+        font-size: 1.5em;
+    }
+    
+    .contact-location h3{
+        font-size: 1.2em;
+    }
+    
+    .contact-location p{
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (min-width:1064px){
+    
+    /* PEOPLE */
+    
+    .people-container{
+        justify-content: space-between;
+    }
     
 }
 
