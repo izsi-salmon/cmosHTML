@@ -247,7 +247,6 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
 /* PAGE FEATURES */
 
 .banner-image{
-    background-image: url(resources/CMOSPrint-44-2.JPG);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -659,7 +658,7 @@ a.value-cta{
 
 .contact-button{
     border: 3px solid #FFF;
-    padding: 0.3em;
+    padding: 0.3em 0.7em;
 }
 
 a.contact-button{
