@@ -12,6 +12,10 @@
     font-style: italic;
 }
 
+.centred-content{
+    text-align: center;
+}
+
 /* MAIN NAVIGATION */
 
 .header{
@@ -445,7 +449,6 @@ a.value-cta{
     display: inline-block;
     margin: 1.5em auto;
     padding: 1.1em 1em;
-    text-align: center;
 }
 
 /* PEOPLE */
@@ -1035,6 +1038,10 @@ a.contact-button{
     .value-card{
         margin: 3em 0;
         width: 45%;
+    }
+    
+    a.value-cta{
+        font-size: 1em;
     }
     
     /* CONTACT */
