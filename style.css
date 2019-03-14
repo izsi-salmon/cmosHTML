@@ -1213,6 +1213,11 @@ a.contact-button{
         margin-top: 3em;
     }
     
+    /*  CONTACT  */
+    
+    .contact-container{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 2000px){
