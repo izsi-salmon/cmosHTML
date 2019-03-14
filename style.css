@@ -390,11 +390,11 @@ a.service-menu-item{
 .sub-service{
     display: flex;
         align-items: center;
-    margin: 0 0 2em 0;
+    margin: 0 0 3em 0;
 }
 
 .sub-service-icon{
-    margin-right: 0.5em;
+    margin-right: 1em;
     width: 3em;
 }
 
@@ -890,7 +890,7 @@ a.contact-button{
     }
     
     .sub-service-icon{
-        margin-bottom: 0.5em;
+        margin-bottom: 0.8em;
     }
     
     .service-description{
@@ -1221,6 +1221,10 @@ a.contact-button{
     
     .contact-container{
         width: 80%;
+    }
+    
+    .contact-collumn{
+        width: 40%;
     }
 }
 
