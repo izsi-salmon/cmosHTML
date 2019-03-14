@@ -1204,7 +1204,11 @@ a.contact-button{
 @media only screen and (min-width: 1500px){
     
     .swiper-container, .banner-image{
-        min-height: 40em;
+        min-height: 35em;
+    }
+    
+    .page-title{
+        font-size: 5.5rem;
     }
     
     /*  ABOUT  */
@@ -1227,7 +1231,15 @@ a.contact-button{
     }
     
     .swiper-container, .banner-image{
-        min-height: 50em;
+        min-height: 45em;
+    }
+    
+    .slide-content{
+        font-size: 1.2em;
+    }
+    
+    .page-title{
+        font-size: 7rem;
     }
     
     .page-blurb{
