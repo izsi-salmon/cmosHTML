@@ -1226,6 +1226,15 @@ a.contact-button{
     .contact-collumn{
         width: 40%;
     }
+    
+    .form-title{
+        font-size: 1.4em;
+    }
+    
+    .form-submit{
+        font-size: 1em;
+        margin-top: 0.6em;
+    }
 }
 
 @media only screen and (min-width: 2000px){
