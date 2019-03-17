@@ -13,7 +13,6 @@ var sticky = navbar.offsetHeight;
 
 function stickyNav() {
     var navHeight = navbar.scrollHeight;
-    console.log(sticky);
     if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky-header');
     freeQuoteCta.classList.add('sticky-mobile-cta');
