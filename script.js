@@ -1,19 +1,39 @@
 // Mobile hamburger menu DOM queries
 var hamburgerButton = document.getElementById('hamburgerIcon');
-var navContent = document.getElementById('mobileMenu');
+var mobileNavContent = document.getElementById('mobileMenu');
 var dropshadow = document.getElementById('dropshadow');
 // Dropdown menu DOM queries
 var dropdownButton = document.getElementById('dropdownButton');
 var dropdownArrow = document.getElementById('dropdownArrow');
 var dropdownContent = document.getElementById('dropdownMenu');
+// Sticky nav bar variables
+var navbar = document.getElementById('navbar');
+var freeQuoteCta = document.getElementById('freequote');
+var sticky = navbar.offsetHeight;
+
+function stickyNav() {
+    var navHeight = navbar.scrollHeight;
+    console.log(sticky);
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add('sticky-header');
+    freeQuoteCta.classList.add('sticky-mobile-cta');
+    freeQuoteCta.style.top = navHeight + 'px';
+    mobileNavContent.style.position = 'fixed';
+    mobileNavContent.style.top = navHeight + 'px';
+  } else {
+    navbar.classList.remove('sticky-header');
+    freeQuoteCta.classList.remove('sticky-mobile-cta');
+  }
+}
+window.onscroll = function() {stickyNav()};
 
 function toggleMenu(){
-    if(navContent.style.maxHeight){
-        navContent.style.maxHeight = null;
+    if(mobileNavContent.style.maxHeight){
+        mobileNavContent.style.maxHeight = null;
         dropshadow.style.opacity = '0';
         dropshadow.style.pointerEvents = 'none';
     } else{
-        navContent.style.maxHeight = navContent.scrollHeight + 'px';
+        mobileNavContent.style.maxHeight = mobileNavContent.scrollHeight + 'px';
         dropshadow.style.opacity = '0.4';
         dropshadow.style.pointerEvents = 'auto';
     }
