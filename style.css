@@ -1,4 +1,3 @@
-/* FONTS */
 *{
     margin: 0;
     padding: 0;
@@ -43,12 +42,12 @@ a:hover{
 .nav{
     margin: 0 1em 0 1em;
     padding: 1em 0;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 }
 
 .nav-item{
     padding: 1em;
-    font-weight: 600;
+/*    font-weight: 600;*/
 /*    border-bottom: 1px solid #34a73a;*/
     border-bottom: 1px solid #333;
 }
@@ -100,6 +99,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     font-weight: 600;
     border: 3px solid #FFF;
     padding: 0.8em 1em;
+    text-transform: uppercase;
 }
 
 .cta-header a{
@@ -214,7 +214,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     border-bottom: 3px solid #34a73a;
     display: inline-block;
     font-size: 0.9em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     padding: 0 0.2em 0.1em 0;
 }
 
@@ -224,6 +224,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
 
 .parag-slide-text p{
     margin-bottom: 0.2em;
+    line-height: 1em;
 }
 
 .slide-cta{
@@ -232,7 +233,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     display: inline-block;
     font-style: italic;
     font-size: 0.6em;
-    margin: 0.7em 0 0 0.2em;
+    margin: 0.5em 0 0 0.2em;
     padding: 0.4em;
 }
 
@@ -473,7 +474,7 @@ a.value-cta{
 
 .person-image{
     margin: 0 auto 2em auto;
-    width: 80%;
+    width: 50%;
 }
 
 .person-image img{
@@ -484,7 +485,7 @@ a.value-cta{
 
 .person-name, .person-role, .person-email{
     margin-bottom: 0.3em;
-/*    text-align: center;*/
+    text-align: center;
 }
 
 .person-role, .person-email{
@@ -502,10 +503,6 @@ a.value-cta{
 
 .person-email{
     font-size: 0.9em;
-}
-
-.person-bio{
-    margin-top: 1em;
 }
 
 /* CAREERS */
@@ -671,6 +668,7 @@ a.value-cta{
 .contact-button{
     border: 3px solid #FFF;
     padding: 0.3em 0.7em;
+    text-transform: uppercase;
 }
 
 a.contact-button{
@@ -727,13 +725,22 @@ a.contact-button{
     z-index: 5;
 }
 
+.swiper-container-sticky{
+    margin-top: 197px;
+}
+
 @media only screen and (min-width: 375px){
+    
     .emph-slide-text{
         font-size: 1.1em;
     }
     
     .parag-slide-text{
         font-size: 0.8em;
+    }
+    
+    .parag-slide-text p{
+        line-height: normal;
     }
     
     .slide-cta{
@@ -773,7 +780,7 @@ a.contact-button{
     }
 
     .emph-slide-text{
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     
     .parag-slide-text p{
@@ -820,7 +827,7 @@ a.contact-button{
     /* PEOPLE */
     
     .section-people{
-        width: 90%;
+        width: 80%;
     }
     
     .people-container{
@@ -830,12 +837,12 @@ a.contact-button{
     }
     
     .person-card{
-        margin: 2em 2em 4.5em 2em;
+/*        margin: 2em 2em 4.5em 2em;*/
         max-width: 250px;
     }
     
     .person-image{
-        width: 90%;
+        width: 50%;
     }
     
     /* CAREERS */
@@ -885,13 +892,13 @@ a.contact-button{
         padding: 2em
     }
     
-    /* PAGE FEATURES*/
+    /* PAGE FEATURES */
     
     .banner-image{
         min-height: 20em;
     }
     
-    /* ^ PAGE FEATURES*/
+    /* ^ PAGE FEATURES */
     
     .service-menu{
         display: flex;
@@ -1135,7 +1142,7 @@ a.contact-button{
     }
     
     .header{
-        padding: 0.7em 5em;
+        padding: 0em 5em;
     }
     
     .nav{
@@ -1145,11 +1152,11 @@ a.contact-button{
     .nav-item{
         border-bottom: 3px solid transparent;
         margin: 1em;
-        padding: 0 0 0.2em 0;
+        padding: 0 0 0.1em 0;
     }
     
     .nav-item-active{
-        border-bottom: 3px solid #FFF;
+        border-bottom: 2px solid #FFF;
     }
     
     .page-title{
@@ -1176,16 +1183,22 @@ a.contact-button{
     /* ^ PAGE FEATURES */
     
     .slide-content{
-        margin-right: 7em;
+        font-size: 0.9rem;
+        margin-right: 8em;
         width: 25%;
     }
-
-    .parag-slide-text{
-        font-size: 0.9em;
+    
+    .slide-text{
+        padding: 2em 3em;
+        margin-bottom: 1em;
+    }
+    
+    .emph-slide-text{
+        margin-bottom: 0.5em;
     }
 
     .parag-slide-text p{
-        margin-bottom: 0.2em;
+        margin-bottom: 0.4em;
     }
     
     .section{
