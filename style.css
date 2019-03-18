@@ -131,13 +131,17 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     z-index: 1000;
 }
 
+.mobile-menu .nav-item{
+    font-size: 1.1em;
+}
+
 .mobile-sub-menu{
     margin: 0.7em 0.5em 0 0;
 }
 
 .mobile-sub-menu-item{
     display: block;
-    font-size: 0.9em;
+    font-size: 0.75em;
     font-weight: 400;
     margin-bottom: 0.5em;
 }
