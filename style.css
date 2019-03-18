@@ -28,7 +28,7 @@ a:hover{
     display: flex;
         justify-content: space-between;
         align-items: center;
-    padding: 1.2em 2em;
+    padding: 0.5em 2em;
     position: relative;
     z-index: 1000;
 }
@@ -39,16 +39,21 @@ a:hover{
         align-items: center;
 }
 
+a.logo-link:hover{
+    opacity: 1;
+}
+
+.logo-link img{
+    width: 95px;
+}
+
 .nav{
     margin: 0 1em 0 1em;
     padding: 1em 0;
-/*    text-transform: uppercase;*/
 }
 
 .nav-item{
     padding: 1em;
-/*    font-weight: 600;*/
-/*    border-bottom: 1px solid #34a73a;*/
     border-bottom: 1px solid #333;
 }
 
@@ -64,7 +69,6 @@ a:hover{
 
 .drop-down-menu{
     background-color: #3EAB46;
-/*    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.3);*/
     box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.3);
     margin-top: 0.7em;
     max-height: 0;
@@ -216,6 +220,7 @@ a.drop-down-menu-item, a.drop-down-menu-item:link, a.drop-down-menu-item:visited
     font-size: 0.9em;
     margin-bottom: 0.3em;
     padding: 0 0.2em 0.1em 0;
+    text-transform: uppercase;
 }
 
 .parag-slide-text{
@@ -474,6 +479,7 @@ a.value-cta{
 
 .person-image{
     margin: 0 auto 2em auto;
+    max-width: 170px;
     width: 50%;
 }
 
@@ -653,7 +659,6 @@ a.value-cta{
     display: flex;
         justify-content: space-between;
         align-items: center;
-    font-weight: 600;
     margin-bottom: 1.7em;
 }
 
@@ -667,6 +672,7 @@ a.value-cta{
 
 .contact-button{
     border: 3px solid #FFF;
+    font-weight: 600;
     padding: 0.3em 0.7em;
     text-transform: uppercase;
 }
@@ -1280,7 +1286,7 @@ a.contact-button{
     }
 }
 
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2500px){
     
     body{
         font-size: 1.2em;
