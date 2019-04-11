@@ -75,9 +75,12 @@ a.logo-link:hover{
     font-size: 1.8em;
 }
 
-.nav-item a, .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+.nav-item a{
     color: #FFF;
     cursor: pointer;
+}
+
+.nav-item a:link:hover{
 }
 
 /* MOBILE MENU */
@@ -746,6 +749,7 @@ a.contact-button{
 }
 
 .footer-link:hover{
+    color: #30BAFF;
 }
 
 a.footer-link{
@@ -789,6 +793,11 @@ a.footer-link{
     font-size: 1.5em;
     margin-left: 1.3em;
 }
+
+.footer-bar a:hover{
+    color: #30BAFF;
+}
+
 
 /* STICKY STUFF */
 
@@ -1283,7 +1292,7 @@ a.footer-link{
     }
     
     .nav-item-active{
-        border-bottom: 2px solid #FFF;
+        font-weight: 700;
     }    
     
     .drop-down-menu{
