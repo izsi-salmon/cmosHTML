@@ -179,17 +179,17 @@ a.logo-link:hover{
 .slide-content{
     margin: 0 auto;
     position: absolute;
-        top: 50%;
+        bottom: 0;
         left: 0;
         right: 0;
-    transform: translateY(-50%);
     width: 70%;
     z-index: 999;
 }
 
 .slide-text{
     background: rgba(0,0,0,0.6);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     color: #fff;
     padding: 0.6em 0.6em;
 }
@@ -865,16 +865,8 @@ a.footer-link{
         min-height: 17em;
         max-height: none;
     }
-    
-    .slide-content{
-        bottom: 0;
-        top: auto;
-        transform: translateY(0);
-    }
 
     .slide-text{
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
         padding: 0.8em 3em;
     }
 
