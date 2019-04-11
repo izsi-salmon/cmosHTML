@@ -1,0 +1,13 @@
+Image reduction:
+
+Resample image: Bicubic sharper
+Resolution: 109 pixels/inch
+JPEG quality: 8 (high)
+
+File size: 200 - 300 KB
+
+.....
+
+Slide show image dimensions:
+
+1883x1060

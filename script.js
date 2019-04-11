@@ -59,6 +59,15 @@ hamburgerButton.addEventListener('click', toggleMenu, false);
 dropshadow.addEventListener('click', toggleMenu, false);
 
 // Function controlling drop-down services menu (desktop only)
+
+//function openDropdown(){
+//    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+//}
+//
+//function closeDropdown(){
+//    dropdownContent.style.maxHeight = null;
+//}
+
 function toggleDropdown(){
     if(dropdownContent.style.maxHeight){
         dropdownContent.style.maxHeight = null;
@@ -71,7 +80,15 @@ dropdownButton.addEventListener("click", function(event){
   event.preventDefault()
 });
 
-dropdownButton.addEventListener('click', toggleDropdown, false);
+dropdownButton.addEventListener('mouseover', toggleDropdown, false);
+
+document.addEventListener('click', function(event) {
+  var isClick = dropdownContent.contains(event.target);
+
+  if (!isClick) {
+      dropdownContent.style.maxHeight = null;
+  }
+});
 
 
 // Function controlling document title change
@@ -99,6 +116,9 @@ var swiper = new Swiper('.swiper1', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  autoplay: {
+    delay: 5000,
+  }
 });
 
 
