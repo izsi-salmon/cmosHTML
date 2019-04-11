@@ -101,7 +101,6 @@ window.onfocus = function() {
     document.title = docTitle; 
 }
 
-
 // SWIPER (Home page slideshow banner)
 
 var swiper = new Swiper('.swiper1', {
@@ -117,7 +116,7 @@ var swiper = new Swiper('.swiper1', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 5000,
+    delay: 12000,
   }
 });
 
